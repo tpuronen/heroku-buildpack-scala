@@ -17,6 +17,7 @@ curl --silent --location http://heroku-jvm-common.s3.amazonaws.com/jvm-buildpack
 . bin/java
 
 #create the cache dir if it doesn't exist
+rm -rf $CACHE_DIR
 mkdir -p $CACHE_DIR
 
 # create default system.properties 
